@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:," />
+    <title>Site para Namorada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="flor" class="flor-section">
+      <a href="flower/flower.html">Flor para minha flor</a>
+    </div>
+    <div class="hero">
+      <img src="img/Nos.jpg" alt="Foto do Casal" class="main-photo" />
+    </div>
+
+    <section class="gallery-section">
+      <!-- Galeria de Fotos -->
+      <div class="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery-container" id="slider">
+          <img src="foto-nossa/foto1.jpg" alt="Imagem 1" class="gallery-photo selected" />
+          <img src="foto-nossa/foto2.jpg" alt="Imagem 2" class="gallery-photo selected" />
+          <img src="foto-nossa/foto3.jpg" alt="Imagem 3" class="gallery-photo selected" />
+          <img src="foto-nossa/foto4.jpg" alt="Imagem 4" class="gallery-photo selected" />
+          <img src="foto-nossa/foto5.jpg" alt="Imagem 5" class="gallery-photo selected" />
+          <img src="foto-nossa/foto6.jpg" alt="Imagem 6" class="gallery-photo selected" />
+          <img src="foto-nossa/foto7.jpg" alt="Imagem 7" class="gallery-photo selected" />
+          <img src="foto-nossa/foto8.jpg" alt="Imagem 8" class="gallery-photo selected" />
+          <img src="foto-nossa/foto9.jpg" alt="Imagem 9" class="gallery-photo selected" />
+          <img src="foto-nossa/foto10.jpg" alt="Imagem 10" class="gallery-photo selected" />
+          <img src="foto-nossa/foto11.jpg" alt="Imagem 11"class="gallery-photo selected" />
+          <img src="foto-nossa/foto12.jpg" alt="Imagem 12" class="gallery-photo selected" />
+          <img src="foto-nossa/foto13.jpg" alt="Imagem 13" class="gallery-photo selected" />
+          <img src="foto-nossa/foto14.jpg" alt="Imagem 14" class="gallery-photo selected" />
+        </div>
+      </div>
+
+      <!-- Controle de Música -->
+      <div class="music-player">
+        <img src="img/terca-de-tarde.jpg" />
+        <div class="descricao">
+          <h2>Nome da música</h2>
+        </div>
+        <div class="duracao">
+          <div class="barra">
+            <progress value="0" max="1"></progress>
+            <div class="ponto"></div>
+          </div>
+          <div class="tempo">
+            <p class="inicio">0:00</p>
+            <p class="fim">3:40</p>
+          </div>
+        </div>
+        <div class="player">
+          <i class="fas fa-step-backward setas anterior"></i>
+          <i class="fas fa-play-circle botao-play"></i>
+          <i class="fas fa-pause-circle botao-pause"></i>
+          <i class="fas fa-step-forward setas proximo"></i>
+        </div>
+        <audio src="musicas/terca-de-tarde.mp3"></audio>
+      </div>
+    </section>
+
+    <!-- Seção de Vídeo -->
+    <section class="video-section">
+      <h2>Nosso Momento Especial</h2>
+      <video controls>
+        <source src="video/video.mp4" type="video/mp4" />
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+    </section>
+
+  </body>
+  <script src="script.js"></script>
+</html>

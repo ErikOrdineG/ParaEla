@@ -1,0 +1,293 @@
+/* Estilos para o layout geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a88473;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px; /* Espaçamento entre imagem e os quadrados */
+  height: 360px;
+}
+
+.main-photo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flor-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.flor-section a {
+  background-color: #ff69b4;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flor-section a:hover {
+  background-color: #ff1493;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-section {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+/* MUSICA */
+.music-player img {
+  width: 250px;
+  height: 200px;
+}
+
+.music-player h2 {
+  margin-top: 5px;
+}
+
+.music-player .duracao {
+  width: 250px;
+  margin-top: 5px;
+}
+
+.music-player .barra {
+  width: 250px;
+  height: 6px;
+  margin-top: -6px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.music-player .progress {
+  height: 6px;
+  width: 0%;
+  background-color: #333;
+}
+
+.music-player .ponto {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.music-player .tempo {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.music-player .player {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.music-player .botao-play,
+.botao-pause {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.music-player .setas {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.music-player .botao-pause {
+  display: none;
+}
+
+/* Estilos para os quadrados */
+
+.gallery,
+.music-player {
+  width: 50%;
+  height: 350px;
+  background-color: #9b6b5c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.gallery-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-photo {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-photo.active {
+  display: block;
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  background-color: #9b6b5c; /* Cor de fundo do quadrado */
+}
+
+.play-pause-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #9b6b5c; /* Cor de fundo do quadrado */
+}
+
+.play-button {
+  margin: 0;
+  background-color: transparent; /* Cor de fundo do botão */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.play-button:hover {
+  transform: scale(1.2);
+}
+
+/* Barra de progresso */
+.progress-bar-container {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #9b6b5c; /* Cor de fundo do quadrado */
+}
+
+.progress-bar {
+  width: 80%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #ccc;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+#currentTime,
+#duration {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.audio-player {
+  width: 80%;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .main-photo {
+    width: 90%;
+  }
+
+  .gallery-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery,
+  .music-player {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Galeria: permite arrastar nas telas menores */
+  .gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
+}
